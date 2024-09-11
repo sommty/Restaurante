@@ -22,44 +22,35 @@
             </ul>
         </div>
     </nav>
-    <div class="container mt-5">
-        <h1>Quem somos</h1>
-        <p>Somos um restaurante empenhado em proporcionar a melhor experiência gastronómica. Nossa equipe de cozinha usa ingredientes frescos e de alta qualidade, tudo para preparar pratos requintados!</p>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-4">
-        <div class="card">
-            <img src="img/dentro.jpg" class="img-fluid" alt="Dentro">
-            <div class="card-body">
-                <h5 class="card-title">VIP</h5>
-              </div>
+        <div class="container mt-5">
+            <h1>Agende seu evento</h1>
+            <form action="procesar_evento.php" method="post">
+                <label for="nombre">Nombre del Cliente:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="fecha">Fecha del Evento:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            <div class="container mt-5">    
+                <label for="hora">Hora del Evento:</label>
+                <input type="time" id="hora" name="hora" required>
+                <label for="tipo-evento">Tipo de Evento:</label>
+                <select id="tipo-evento" name="tipo-evento" required>
+                    <option value="cumpleaños">Cumpleaños</option>
+                    <option value="boda">Boda</option>
+                    <option value="corporativo">Evento Corporativo</option>
+                    <option value="otro">Otro</option>
             </div>
+                </select>
+                <label for="num-personas">Número de Personas:</label>
+                <input type="number" id="num-personas" name="num-personas" min="1" required>
+                <div class="container mt-5">
+                <footer class="bglight text-center py-4">
+                <button type="submit" class="btn btn-primary">Agendar</button>
+                </footer>
+            </form>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-              <img src="img/barra.jpg" class="img-fluid" alt="Barra">
-              <div class="card-body">
-                  <h5 class="card-title">Asientos regulares</h5>
-                </div>
-              </div>
-          </div>        
-        <div class="col-md-3">
-            <div class="card">
-                <img src="img/vista.jpg" class="img-fluid" alt="Vista">
-                <div class="card-body">
-                    <h5 class="card-title">Vista</h5>
-                  </div>
-                </div>
-            </div>
-          <div class="col-md-4">
-            <div class="card">
-                <img src="img/asientos.jpg" class="img-fluid" alt="Asientos">
-                <div class="card-body">
-                    <h5 class="card-title">Cocina</h5>
-                  </div>
-                </div>
-            </div>
-          </div>
+    </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <footer class="bglight text-center py-4">
       <p>Siga-nos em nossas redes:</p>
