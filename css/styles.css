@@ -1,0 +1,11 @@
+body {
+    font-family: Times New Roman;
+    padding-top: 70px;
+}
+.navbar {
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
